@@ -27,8 +27,7 @@ export function showLoginView(container, presenter) {
                     <p>Inicia sesión para continuar</p>
                 </header>
 
-                <form id="login-form" class="auth-form">
-
+                <form id="login-form" class="auth-form">            
                     <div class="form-group">
                         <label for="login-email">
                             Correo electrónico

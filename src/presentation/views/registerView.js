@@ -20,6 +20,17 @@ export function showRegisterView(container, presenter) {
                 </header>
 
                 <form id="register-form" class="auth-form">
+                    <div class="form-group">
+                        <label for="register-institucion">
+                            ingrese el nombre de la intitucion
+                        </label>
+
+                        <input
+                            type="text"
+                            id="register-institucion"
+                            name="institucion"
+                            placeholder="ingrese el nombre de la intitucion"
+                            required
 
                     <div class="form-group">
                         <label for="register-name">
@@ -34,6 +45,18 @@ export function showRegisterView(container, presenter) {
                             required
                         >
                     </div>
+                    
+                    <div class="form-group">
+                        <label for="register-genero">
+                            ingresar genero
+                        </label>
+
+                        <input
+                            type="text"
+                            id="register-genero"
+                            name="genero"
+                            placeholder="ingresar genero"
+                            required
 
                     <div class="form-group">
                         <label for="register-email">
@@ -104,7 +127,9 @@ export function showRegisterView(container, presenter) {
         const formData = new FormData(registerForm);
 
         const userData = {
+            institucion: formData.get("institucion"), 
             name: formData.get("name"),
+            genero: formData.get("genero"),
             email: formData.get("email"),
             password: formData.get("password")
         };
