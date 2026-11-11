@@ -33,9 +33,9 @@ export function showRegisterView(container, presenter) {
                             required
                         >
                            <option value=""> Seleccione una opción </option>
-                               <option value="san jose">san jose </option>
-                               <option value="san jeronimo">san jeronimo</option>
-                               <option value="otros">otros</option>
+                               <option value="san jose">San Jose </option>
+                               <option value="san jeronimo">San Jeronimo</option>
+                               <option value="san lorenzo">San Lorenzo</option>
                                
                         </select>
 
@@ -56,7 +56,7 @@ export function showRegisterView(container, presenter) {
                     </div>
                     <div class="form-group">
                         <label for="register-tipo-usuario">
-                           Indique su tipo de usuario
+                           Ingrese su tipo de usuario
                         </label>
 
                             <select
@@ -68,6 +68,7 @@ export function showRegisterView(container, presenter) {
                              <option value="estudiante">Estudiante</option>
                              <option value="trabajador">Trabajador</option>
                              <option value="profesor">Profesor</option>
+                             <option value="otro">Otro</option>
                              </select>
                     </div>
                     <div class="form-group">
@@ -85,6 +86,7 @@ export function showRegisterView(container, presenter) {
                                <option value="masculino">Masculino</option>
                                <option value="femenino">Femenino</option>
                                <option value="no-binario">No binario</option>
+                               <option value="trigenero">Trigenero</option>
                                <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
                          </select>
 
